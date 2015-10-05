@@ -73,18 +73,16 @@
       <DependentUpon>SimplifiedBackgroundOperation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\error.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ok.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\spin.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cancelled.png" />
+    <Content Include="Resources\Error.png" />
+    <Content Include="Resources\Error16.png" />
     <Content Include="Resources\notstarted.png" />
+    <Content Include="Resources\Ok.png" />
+    <Content Include="Resources\Ok16.png" />
+    <Content Include="Resources\spin.gif" />
+    <Content Include="Resources\Warning.png" />
+    <Content Include="Resources\Warning16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

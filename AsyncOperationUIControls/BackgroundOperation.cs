@@ -81,7 +81,7 @@ namespace AsyncOperationUIControls
 						}
 						else
 						{
-							pictureBox.Image = Resources.ok;
+							pictureBox.Image = Resources.Ok16;
 							label.ForeColor = Color.Green;
 							label.Text = "OK";
 							buttonCancel.Enabled = true;
@@ -92,7 +92,7 @@ namespace AsyncOperationUIControls
 					else if (t.Status == TaskStatus.Faulted)
 					{
 						var ex = t.Exception.InnerException;
-						pictureBox.Image = Resources.error;
+						pictureBox.Image = Resources.Error16;
 						toolTip.SetToolTip(pictureBox, ex.ToString());
 						toolTip.SetToolTip(label, ex.ToString());
 

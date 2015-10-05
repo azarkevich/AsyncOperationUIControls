@@ -38,7 +38,7 @@
 			// label
 			// 
 			this.label.AutoSize = true;
-			this.label.Location = new System.Drawing.Point(22, 3);
+			this.label.Location = new System.Drawing.Point(19, 4);
 			this.label.Name = "label";
 			this.label.Size = new System.Drawing.Size(38, 13);
 			this.label.TabIndex = 1;
@@ -46,10 +46,10 @@
 			// 
 			// pictureBox
 			// 
-			this.pictureBox.Image = global::AsyncOperationUIControls.Properties.Resources.notstarted;
-			this.pictureBox.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox.Image = global::AsyncOperationUIControls.Properties.Resources.Ok16;
+			this.pictureBox.Location = new System.Drawing.Point(0, 2);
 			this.pictureBox.Name = "pictureBox";
-			this.pictureBox.Size = new System.Drawing.Size(18, 18);
+			this.pictureBox.Size = new System.Drawing.Size(16, 16);
 			this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox.TabIndex = 0;
 			this.pictureBox.TabStop = false;
@@ -63,7 +63,7 @@
 			this.Controls.Add(this.label);
 			this.Controls.Add(this.pictureBox);
 			this.Name = "SimplifiedBackgroundOperation";
-			this.Size = new System.Drawing.Size(63, 21);
+			this.Size = new System.Drawing.Size(60, 21);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

@@ -105,7 +105,7 @@ namespace AsyncOperationUIControls
 					{
 						label.Text = CancelledText;
 						label.ForeColor = Color.Peru;
-						pictureBox.Image = Resources.cancelled;
+						pictureBox.Image = Resources.Warning16;
 					}
 					else if (t.IsFaulted)
 					{
@@ -115,11 +115,11 @@ namespace AsyncOperationUIControls
 						{
 							label.Text = CancelledText;
 							label.ForeColor = Color.Peru;
-							pictureBox.Image = Resources.cancelled;
+							pictureBox.Image = Resources.Warning16;
 						}
 						else
 						{
-							pictureBox.Image = Resources.Error.ToBitmap();
+							pictureBox.Image = Resources.Error16;
 							label.Text = string.Format(_errorTemplateText, ex.Message, ex);
 							label.ForeColor = Color.Red;
 							toolTip.SetToolTip(pictureBox, t.Exception.InnerException.Message);
@@ -128,7 +128,7 @@ namespace AsyncOperationUIControls
 					}
 					else
 					{
-						pictureBox.Image = Resources.ok;
+						pictureBox.Image = Resources.Ok16;
 						label.Text = RanToCompletionText;
 					}
 

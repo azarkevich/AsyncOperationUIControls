@@ -14,12 +14,12 @@ namespace Test
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			simplifiedBackgroundOperation1.Track(StartOperation(TimeSpan.FromSeconds(5), false));
+			simplifiedBackgroundOperation1.Track(StartOperation(TimeSpan.FromSeconds(2), false));
 		}
 
 		void button2_Click(object sender, EventArgs e)
 		{
-			simplifiedBackgroundOperation1.Track(StartOperation(TimeSpan.FromSeconds(5), true));
+			simplifiedBackgroundOperation1.Track(StartOperation(TimeSpan.FromSeconds(2), true));
 		}
 
 		async Task StartOperation(TimeSpan ts, bool fail)
@@ -42,7 +42,7 @@ namespace Test
 			simplifiedBackgroundOperation1.Track(tcs.Task);
 
 			Task.Run(() => {
-				Thread.Sleep(TimeSpan.FromSeconds(5));
+				Thread.Sleep(TimeSpan.FromSeconds(2));
 				tcs.SetCanceled();
 			});
 		}
