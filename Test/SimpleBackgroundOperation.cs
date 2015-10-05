@@ -14,12 +14,12 @@ namespace Test
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			simplifiedBackgroundOperation1.Track(StartOperation(TimeSpan.FromSeconds(5), false), "5 Seconds operation ....");
+			simplifiedBackgroundOperation1.Track(StartOperation(TimeSpan.FromSeconds(5), false));
 		}
 
 		void button2_Click(object sender, EventArgs e)
 		{
-			simplifiedBackgroundOperation1.Track(StartOperation(TimeSpan.FromSeconds(5), true), "5 Seconds operation ....");
+			simplifiedBackgroundOperation1.Track(StartOperation(TimeSpan.FromSeconds(5), true));
 		}
 
 		async Task StartOperation(TimeSpan ts, bool fail)
@@ -39,7 +39,7 @@ namespace Test
 		{
 			var tcs = new TaskCompletionSource<string>();
 
-			simplifiedBackgroundOperation1.Track(tcs.Task, "5 Seconds operation ....");
+			simplifiedBackgroundOperation1.Track(tcs.Task);
 
 			Task.Run(() => {
 				Thread.Sleep(TimeSpan.FromSeconds(5));

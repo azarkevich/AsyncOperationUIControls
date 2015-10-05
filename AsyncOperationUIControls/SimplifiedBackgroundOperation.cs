@@ -119,8 +119,8 @@ namespace AsyncOperationUIControls
 						}
 						else
 						{
-							pictureBox.Image = Resources.error;
-							label.Text = string.Format(_errorTemplateText, _errorTemplateText, ex.Message, ex);
+							pictureBox.Image = Resources.Error.ToBitmap();
+							label.Text = string.Format(_errorTemplateText, ex.Message, ex);
 							label.ForeColor = Color.Red;
 							toolTip.SetToolTip(pictureBox, t.Exception.InnerException.Message);
 							toolTip.SetToolTip(label, t.Exception.InnerException.ToString());
