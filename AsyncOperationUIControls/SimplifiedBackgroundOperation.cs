@@ -12,6 +12,7 @@ namespace AsyncOperationUIControls
 		string _rantoCompletionText = "Completed";
 		string _errorTemplateText = "Error: {0}";
 		string _cancelledText = "Cancelled";
+		string _inProgressText = "In Progress...";
 
 		public SimplifiedBackgroundOperation()
 		{
@@ -30,6 +31,19 @@ namespace AsyncOperationUIControls
 			set
 			{
 				_notStartedText = value;
+			}
+		}
+
+		[Browsable(true), EditorBrowsable(EditorBrowsableState.Always)]
+		public string InProgressText
+		{
+			get
+			{
+				return _inProgressText;
+			}
+			set
+			{
+				_inProgressText = value;
 			}
 		}
 
@@ -77,10 +91,10 @@ namespace AsyncOperationUIControls
 			pictureBox.Image = Resources.notstarted;
 		}
 
-		public void Track(Task task, string inprogressText)
+		public void Track(Task task)
 		{
 			pictureBox.Image = Resources.spin;
-			label.Text = inprogressText;
+			label.Text = InProgressText;
 			label.ForeColor = DefaultForeColor;
 			toolTip.RemoveAll();
 
