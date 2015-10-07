@@ -75,15 +75,16 @@ namespace AsyncOperationUIControls
 
 					if (t.Status == TaskStatus.RanToCompletion)
 					{
+						pictureBox.Image = Resources.Ok;
+						label.ForeColor = Color.Green;
+						label.Text = "OK";
+
 						if (CloseOnRanToCompletion)
 						{
 							Visible = false;
 						}
 						else
 						{
-							pictureBox.Image = Resources.Ok16;
-							label.ForeColor = Color.Green;
-							label.Text = "OK";
 							buttonCancel.Enabled = true;
 							buttonCancel.Text = "Close";
 							_hideByClickOnCancel = true;
@@ -92,7 +93,7 @@ namespace AsyncOperationUIControls
 					else if (t.Status == TaskStatus.Faulted)
 					{
 						var ex = t.Exception.InnerException;
-						pictureBox.Image = Resources.Error16;
+						pictureBox.Image = Resources.Error;
 						toolTip.SetToolTip(pictureBox, ex.ToString());
 						toolTip.SetToolTip(label, ex.ToString());
 
