@@ -75,7 +75,7 @@ namespace AsyncOperationUIControls
 
 					if (t.Status == TaskStatus.RanToCompletion)
 					{
-						pictureBox.Image = Resources.Ok;
+						pictureBox.Image = Resources.Ok32;
 						label.ForeColor = Color.Green;
 						label.Text = "OK";
 
@@ -93,7 +93,7 @@ namespace AsyncOperationUIControls
 					else if (t.Status == TaskStatus.Faulted)
 					{
 						var ex = t.Exception.InnerException;
-						pictureBox.Image = Resources.Error;
+						pictureBox.Image = Resources.Error32;
 						toolTip.SetToolTip(pictureBox, ex.ToString());
 						toolTip.SetToolTip(label, ex.ToString());
 

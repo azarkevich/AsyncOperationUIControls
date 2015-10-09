@@ -105,7 +105,7 @@ namespace AsyncOperationUIControls
 					{
 						label.Text = CancelledText;
 						label.ForeColor = Color.Peru;
-						pictureBox.Image = Resources.Warning16;
+						pictureBox.Image = Resources.Cancelled16;
 					}
 					else if (t.IsFaulted)
 					{
@@ -115,7 +115,7 @@ namespace AsyncOperationUIControls
 						{
 							label.Text = CancelledText;
 							label.ForeColor = Color.Peru;
-							pictureBox.Image = Resources.Warning16;
+							pictureBox.Image = Resources.Cancelled16;
 						}
 						else
 						{

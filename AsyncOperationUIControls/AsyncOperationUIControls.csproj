@@ -75,14 +75,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Resources\Error.png" />
-    <Content Include="Resources\Error16.png" />
-    <Content Include="Resources\notstarted.png" />
-    <Content Include="Resources\Ok.png" />
-    <Content Include="Resources\Ok16.png" />
+    <Content Include="Resources\Images\Cancelled16.png" />
+    <Content Include="Resources\Images\Cancelled32.png" />
+    <Content Include="Resources\Images\Error16.png" />
+    <Content Include="Resources\Images\Error32.png" />
+    <Content Include="Resources\Images\LICENSE.txt" />
+    <Content Include="Resources\Images\Ok16.png" />
+    <Content Include="Resources\Images\Ok32.png" />
     <Content Include="Resources\spin.gif" />
-    <Content Include="Resources\Warning.png" />
-    <Content Include="Resources\Warning16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
